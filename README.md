@@ -3,7 +3,7 @@
 <!-- markdownlint-disable no-duplicate-header -->
 
 <div align="center">
-  <img src="figures/logo.png" width="60%" alt="DeepSeek-V3" />
+  <img src="figures/logo.png" width="60%" alt="kTicketBot" />
 </div>
 <hr>
 
