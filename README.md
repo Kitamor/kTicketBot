@@ -29,7 +29,7 @@ First of all, everything can be set according to your wishes. You can see the co
 
 # 3. Setup
 Needs: Node.JS & Discord token, that's all!
-- Node.JS: We recommend you to use Node.JS version "v18.20.6". However if you use another Node.JS version it's your own desicion.
+- Node.JS: We recommend you to use Node.JS version "v18.20.6". However if you use another Node.JS version it's your own decision.
 <a href="https://nodejs.org/en/download">Node.JS Download</a>
 - Discord Token: If you don't have any application and don't know how to get token and invite your bot at your server, watch this video. After that enter that token to config.js line 2. It will like this: "token": "randombunchoflettersrandombunchofletters.randombunchofletters.randombunchofletters"
 <a href="https://discord.com/developers">Discord Developers Portal</a>
