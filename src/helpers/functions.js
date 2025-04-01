@@ -29,7 +29,7 @@ function log(content) {
 }
 
 function isOwner(id) {
-    config.owners.some(oid => oid === id)
+    return config.owners.some(oid => oid === id)
 }
 
 async function isBlacklisted(id) {
