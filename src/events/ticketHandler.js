@@ -423,7 +423,7 @@ module.exports = {
 
                     const formattedRoles = await category[locale].requiredRoleId.map(rol => `<@&${rol}>`).join(', ');
 
-                    if (!isMemberHasRole) return await interaction.reply({ embeds: [getEmbedInteractionReplace(config.ticket.messages.doesNotHaveRequiredRole, interaction, "[roles]", formattedRoles)] })
+                    if (!isMemberHasRole) return await interaction.reply({ embeds: [getEmbedInteractionReplace(config.ticket.messages.doesNotHaveRequiredRole, interaction, "[roles]", formattedRoles)], ephemeral: true })
                 }
 
                 if (category[locale].questions.length > 0) {
