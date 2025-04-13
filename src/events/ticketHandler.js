@@ -196,7 +196,7 @@ module.exports = {
             await interaction.channel.permissionOverwrites.edit(interaction.member, {
                 SendMessages: true
             }).then(channel => {
-                channel.send({ embeds: [getEmbedInteractionReplace(config.ticket.messages.stuffAssignedToTicket, ticketInfo, "[staff]", interaction.user)] })
+                channel.send({ embeds: [getEmbedInteractionReplace(config.ticket.messages.staffAssignedToTicket, ticketInfo, "[staff]", interaction.user)] })
             }).catch((err) => {
                 console.log(err)
             });
