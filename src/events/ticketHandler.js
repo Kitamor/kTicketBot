@@ -363,7 +363,7 @@ module.exports = {
 
 
 
-            interaction.channel.send({ embeds: [getEmbedInteraction(config.ticket.messages.ticketDeleted.embed, ticketInfo)] }).then(() => {
+            await interaction.channel.send({ embeds: [getEmbedInteraction(config.ticket.messages.ticketDeleted.embed, ticketInfo)] }).then(() => {
                 setTimeout(async () => {
                     await db.delete(`tickets.${interaction.channel.id}`)
                     await interaction.channel.delete();
