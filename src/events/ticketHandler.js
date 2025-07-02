@@ -220,8 +220,8 @@ module.exports = {
                 await channel.send({ embeds: [getEmbedInteraction(config.ticket.messages.ticketClosed.embed, ticketInfo)], components: [getAfterTicketCloseEmbedButtonRow(ticketInfo)] }).then(async (msg) => {
                     await db.push(`tickets.${interaction.channel.id}.deletableMessages`, msg.id)
                 })
-            }).catch((err) => {
-                deleteTicket()
+            }).catch(async (err) => {
+                await deleteTicket()
             });
         }
 
