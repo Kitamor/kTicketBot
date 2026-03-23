@@ -1,40 +1,71 @@
-<!-- markdownlint-disable first-line-h1 -->
-<!-- markdownlint-disable html -->
-<!-- markdownlint-disable no-duplicate-header -->
-
 <div align="center">
   <img src="figures/logo.png" width="60%" alt="kTicketBot" />
 </div>
 <hr>
 
-# If you can't set it by yourself you can come our Discord servers for setups or adding new features. <a href="https://discord.gg/7S8y9ntrbe">Click here.</a>
+kTicketBot is an advanced and customizable ticket system for your Discord server. It allows you to communicate professionally with your customers and manage your support team efficiently.
 
-## 1. Introduction
+## 🚀 Features
 
-With kTicketBot software, you can set up a custom ticket bot on your Discord server. In this way, you will always start one step ahead of your competitors. In addition, you will gain the appreciation and trust of your customers with our wonderful advanced systems.
+kTicketBot offers much more than a standard ticket bot:
 
-## 2. Features
-First of all, everything can be set according to your wishes. You can see the config.js file yourself. Here are the highlighted features!
-- Multi-language capability and adjustability of all messages and buttons (including Turkish and English)
-- Ability to set the status of the bot.
-- Selecting request category with button or menu.
-- Assigning a ticket and giving points to the staff after the ticket is closed.
-- Mentioning the staff role after the ticket is created.
-- Ticket can be reopened after it is closed and the ticket owner will be mentioned if it is reopened.
-- Only staff can close tickets.
-- If the user has not created any tickets before, it will survey the user before opening a ticket.
-- Saves the ticket transcript in the “transcripts” folder.
-- User blacklist with the command “/blacklist”
-- It automatically closes the ticket if the ticket owner leaves the server and sends a reopen button to the channel if the ticket owner rejoins the server.
+- **Multi-language Support:** All messages and buttons can be configured in both Turkish and English (TR/EN out of the box).
+- **Flexible Configuration:** Customize everything via the `config.js` file to suit your needs.
+- **Category Selection:** Use buttons or menus to categorize tickets for easier management.
+- **Staff Assignment System:** Staff can assign tickets to themselves, ensuring clear responsibility.
+- **Advanced Ranking System:** Track staff performance (number of tickets handled, message counts, average rating).
+- **Transcript System:** Automatically saves HTML/text logs of closed tickets in the "transcripts" folder and sends them to your log channel.
+- **Survey System:** Ask users questions like "How did you hear about us?" before they open their first ticket.
+- **Blacklist System:** Prevent specific users from opening tickets permanently.
+- **Anti-Ghosting:** Automatically closes tickets if the owner leaves the server and provides a reopen button if they return.
+- **Custom Prefix Commands:** Create rapid-reply commands using your preferred bot prefix.
 
-# 3. Setup
-Needs: Node.JS & Discord token, that's all!
-- Node.JS: We recommend you to use Node.JS version "v18.20.6". However if you use another Node.JS version it's your own decision.
-<a href="https://nodejs.org/en/download">Node.JS Download</a>
-- Discord Token: If you don't have any application and don't know how to get token and invite your bot at your server, watch this video. After that enter that token to config.js line 2. It will like this: "token": "randombunchoflettersrandombunchofletters.randombunchofletters.randombunchofletters"
-<a href="https://discord.com/developers">Discord Developers Portal</a>
-<a href="https://www.youtube.com/watch?v=4XswiJ1iUaw">Discord Token Obtain And Invite Server Tutorial</a>
-After you setup you can just run the "start.bat" and wait then reopen the window and you are good to go! Enjoy :)
+## 🛠️ Installation
 
-# License
-<a href="LICENSE">This software is under the MIT License. Click to read what you can do.</a>
+Follow these steps to set up the bot:
+
+1. **Requirements:**
+   - [Node.js](https://nodejs.org/) (Version `v18.20.6` is recommended).
+   - A Discord Bot Token.
+
+2. **Download Files:**
+   Download the project and extract it to a folder.
+
+3. **Install Dependencies:**
+   Open a terminal/command prompt in the project folder and run:
+   ```bash
+   npm install
+   ```
+
+4. **Configuration:**
+   Open the `config.js` file with a text editor (VS Code, Notepad, etc.):
+   - `token`: Enter your bot token here.
+   - `guildId`: Enter your server ID.
+   - `owners`: Add the IDs of the bot owners in an array.
+   - Adjust other settings as needed.
+
+5. **Start the Bot:**
+   Run `start.bat` or use the command in your terminal:
+   ```bash
+   node index.js
+   ```
+
+## 📢 Usage & Setup Command
+
+Once the bot is running, complete the setup on your server:
+
+1. As a bot owner (listed in the config), go to any channel on your server.
+2. Use the following command to send the ticket opening message:
+   ```text
+   !setup en-US
+   ```
+   *(For Turkish setup, use `!setup tr`.)*
+
+3. The bot will send a stylish embed message with a ticket creation button in the specified language.
+
+## 📄 License
+
+This software is licensed under the [MIT License](LICENSE).
+
+---
+**Need help? Join our Discord:** [Click here](https://discord.gg/7S8y9ntrbe)
